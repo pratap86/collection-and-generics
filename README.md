@@ -11,7 +11,7 @@
 compiler's ability to look at each method invocation and corresponding declaration to determine the type argument/arguments ( such as T ) that make the invocation applicable - the inference algorithm determines: the types of the arguments + the type that the result is being assigned or returned if available !!! - <b>the inference algorithm tries to find the most specific type that works with all of the arguments</b>
 </p>
 
-* <T> indicate that method is generic method.
+* diamondoperator of (T) indicate that method is generic method.
 
 ```ruby
 public <T> T getData(T t1, T t2){
