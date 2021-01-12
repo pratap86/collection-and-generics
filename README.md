@@ -20,3 +20,12 @@ public <T> T getData(T t1, T t2){
 Serializable s = getData( "Hello world" , new ArrayList<String>() );
 ```
 
+<p>
+Because of the type inference algorithm, we can use instantiation like this:
+
+```ruby
+List<String> list = new ArrayList<>();
+```
+Generic methods and type interference:
+Enables us to invoke a generic method as you would an ordinary method, without specifying a type between angle brackets
+</p>
