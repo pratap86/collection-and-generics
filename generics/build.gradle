@@ -21,8 +21,8 @@ repositories {
 dependencies {
    
     // JUnit Jupiter API and TestEngine implementation
-	testCompile 'org.junit.jupiter:junit-jupiter-api:'+"${junitJupitarVersion}"
-	testCompile 'org.junit.jupiter:junit-jupiter-engine:'+"${junitJupitarVersion}"
+	testRuntime 'org.junit.jupiter:junit-jupiter-api:'+"${junitJupitarVersion}"
+	testRuntime 'org.junit.jupiter:junit-jupiter-engine:'+"${junitJupitarVersion}"
 }
 
 test {
