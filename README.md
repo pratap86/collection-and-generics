@@ -19,7 +19,7 @@ public <T> T getData(T t1, T t2){
 }
 Serializable s = getData( "Hello world" , new ArrayList<String>() );
 ```
-
+* Here Serializable is fine bcz String is Serializable and Array is also Serializable, so no type cast is required here.
 <p>
 Because of the type inference algorithm, we can use instantiation like this:
 
