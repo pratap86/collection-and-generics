@@ -52,3 +52,38 @@ It is not generic in the sense that we can not print list of integers or list of
 or list of custom objects -> we have to cast them to Object before calling that method
 COLLECTION OF OBJECT IS NOT A SUPERTYPE OF ALL KINDS OF COLLECTIONS !!!
 The supertype of all kinds of collections -> wildcard</p>
+
+<p>
+
+```ruby
+print(Collection<?> c)
+for i in c:
+print i	
+```
+
+we can do it we can print out whatever we want, but we cannot insert to that collection whatever we want because we don't know what type will be passed in Sole exception: NULL
+
+```ruby
+c.add(new Object()) this will cause compile time error 
+
+public interface Shape() {
+	public void draw();
+}
+
+class Circle extends Shape {
+	draw:
+	print "Drawing a circle...";
+}
+class Rectangle extends Shape {
+	draw:
+	print "Drawing a rectangle...";
+}
+drawAll(List<Shape> l)
+	for i in l
+	i.draw()
+```
+
+This is going to work only for Shapes but not for classes that implements that given
+Shape interface--> we can not call this method on List<Rectangle> for example
+THIS IS WHY BOUNDED WILDCARDS HAVE CAME TO BE !!!
+</p>
