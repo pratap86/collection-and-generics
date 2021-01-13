@@ -29,3 +29,26 @@ List<String> list = new ArrayList<>();
 Generic methods and type interference:
 Enables us to invoke a generic method as you would an ordinary method, without specifying a type between angle brackets
 </p>
+
+* WILDCARDS
+
+<p>The problems and the most important fact about generics
+
+```ruby
+Collection<String> c1 = new ArrayList<>();
+Collection<Object> c2 = c1  it is not valid !!!
+String is an Object but a Collection<String> is not a Collection<Object> !!!
+So a List<Employee> is not a List<Person> even when the Employee class extends the Person class
+```
+THIS IS WHY WILDCARDS HAVE CAME TO BE 
+
+```ruby
+print(Collection<Object> c)
+			for i in c
+				print i
+```
+
+It is not generic in the sense that we can not print list of integers or list of doubles
+or list of custom objects -> we have to cast them to Object before calling that method
+COLLECTION OF OBJECT IS NOT A SUPERTYPE OF ALL KINDS OF COLLECTIONS !!!
+The supertype of all kinds of collections -> wildcard</p>
